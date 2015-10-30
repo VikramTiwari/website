@@ -11,6 +11,7 @@
 * Unit testing with [Web Component Tester](https://github.com/Polymer/web-component-tester)
 * Optional offline setup through [Platinum](https://elements.polymer-project.org/browse?package=platinum-elements) Service Worker elements
 * End-to-end Build Tooling (including [Vulcanize](https://github.com/Polymer/vulcanize))
+* [Recipes](/docs/README.md/) for ES2015 support, Polymer performance and using Chrome Dev Editor
 
 ## Getting Started
 
@@ -115,7 +116,7 @@ Polymer 1.0 introduces a shim for CSS custom properties. We take advantage of th
 ### Styling
 1. ***main.css*** - to define styles that can be applied outside of Polymer's custom CSS properties implementation. Some of the use-cases include defining styles that you want to be applied for a splash screen, styles for your application 'shell' before it gets upgraded using Polymer or critical style blocks that you want parsed before your elements are.
 2. ***app-theme.html*** - to provide theming for your application. You can also find our presets for Material Design breakpoints in this file.
-3. ***shared-styles.html*** - to shared styles between elements and index.html.
+3. ***shared-styles.html*** - to share styles between elements and index.html.
 4. ***element styles only*** - styles specific to element. These styles should be inside the `<style></style>` inside `template`.
 
   ```HTML
@@ -172,7 +173,7 @@ To enable Service Worker support for Polymer Starter Kit project use these 3 ste
                         skip-waiting
                         on-service-worker-installed="displayInstalledToast">
     <platinum-sw-cache default-cache-strategy="networkFirst"
-                       precache-file="precache.json">
+                       cache-config-file="precache.json">
     </platinum-sw-cache>
   </platinum-sw-register>
   -->
@@ -338,26 +339,6 @@ If you are not using the build-blocks, but still wish for additional files (e.g 
 Don't worry! We've got your covered. Polymer Starter Kit tries to offer everything you need to build and optimize your apps for production, which is why we include the tooling we do. We realise however that our tooling setup may not be for everyone.
 
 If you find that you just want the simplest setup possible, we recommend using Polymer Starter Kit light, which is available from the [Releases](https://github.com/PolymerElements/polymer-starter-kit/releases) page. This takes next to no time to setup.
-
-### If you require more granular configuration of Vulcanize than polybuild provides you an option by:
-
-1. Copy code below
-2. Then replace `gulp.task('vulcanize', function () {...` entire gulp vulcanize task code in `gulpfile.js`
-
-```javascript
-// Vulcanize granular configuration
-gulp.task('vulcanize', function () {
-  var DEST_DIR = 'dist/elements';
-  return gulp.src('dist/elements/elements.vulcanized.html')
-    .pipe($.vulcanize({
-      stripComments: true,
-      inlineCss: true,
-      inlineScripts: true
-    }))
-    .pipe(gulp.dest(DEST_DIR))
-    .pipe($.size({title: 'vulcanize'}));
-});
-```
 
 ## Contributing
 

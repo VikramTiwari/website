@@ -23,11 +23,11 @@
     "gulp-vulcanize": "^6.0.0",
     "jshint-stylish": "^2.0.0",
     "merge-stream": "^0.1.7",
-    "polybuild": "^1.0.5",
     "require-dir": "^0.3.0",
     "run-sequence": "^1.0.2",
     "vulcanize": ">= 1.4.2",
-    "web-component-tester": "^3.1.3"
+    "web-component-tester": "^3.1.3",
+    "gulp-gh-pages": "^0.5.4"
   },
   "scripts": {
     "test": "gulp test:local",
@@ -35,8 +35,5 @@
   },
   "engines": {
     "node": ">=0.10.0"
-  },
-  "dependencies": {
-    "gulp-gh-pages": "^0.5.4"
   }
 }
