@@ -1,21 +1,13 @@
 ![](https://cloud.githubusercontent.com/assets/110953/7877439/6a69d03e-0590-11e5-9fac-c614246606de.png)
-## Polymer Starter Kit
+## Website
 
-> A starting point for building web applications with Polymer 1.0
+> A website built using Polymer on top of polymer-starter-kit.
 
-### Included out of the box:
-
-* [Polymer](http://polymer-project.org), [Paper](https://elements.polymer-project.org/browse?package=paper-elements), [Iron](https://elements.polymer-project.org/browse?package=iron-elements) and [Neon](https://elements.polymer-project.org/browse?package=neon-elements) elements
-* [Material Design](http://www.google.com/design/spec/material-design/introduction.html) layout
-* Routing with [Page.js](https://visionmedia.github.io/page.js/)
-* Unit testing with [Web Component Tester](https://github.com/Polymer/web-component-tester)
-* Optional offline setup through [Platinum](https://elements.polymer-project.org/browse?package=platinum-elements) Service Worker elements
-* End-to-end Build Tooling (including [Vulcanize](https://github.com/Polymer/vulcanize))
-* [Recipes](/docs/README.md/) for ES2015 support, Polymer performance and using Chrome Dev Editor
+### [Documentation for polymer-starter-kit](https://github.com/PolymerElements/polymer-starter-kit)
 
 ## Getting Started
 
-To take advantage of Polymer Starter Kit you need to:
+To take advantage of this project you need to:
 
 1. Get a copy of the code.
 2. Install the dependencies if you don't already have them.
@@ -24,27 +16,14 @@ To take advantage of Polymer Starter Kit you need to:
 
 ### Get the code
 
-[Download](https://github.com/polymerelements/polymer-starter-kit/releases/latest) and extract Polymer Starter Kit to where you want to work. The project comes in two flavours - Light and Full.
-
-**Beginners**: Try Polymer Starter Kit Light. This doesn't require any extra dependencies nor knowledge of modern front-end tooling. This option is good for prototyping if you haven't build a Polymer app before.
-
-**Intermediate - Advanced**: Use the full version of Polymer Starter Kit. This comes with all the build tools you'll need for testing and productionising your app so it's nice and lean. You'll need to run a few extra commands to install the tools we recommend but it's worth it to make sure your final app is super optimised.
-
-Rob Dodson has a fantastic [PolyCast video](https://www.youtube.com/watch?v=xz-yixRxZN8) available that walks through using Polymer Starter Kit. An [end-to-end with Polymer](https://www.youtube.com/watch?v=1f_Tj_JnStA) and Polymer Starter Kit talk is also available.
+[Download](https://github.com/VikramTiwari/website/archive/master.zip) and extract code to where you want to work.
+[Clone](github-mac://openRepo/https://github.com/VikramTiwari/website) the app on your computer.
 
 ### Install dependencies
 
-#### Quick-start (for experienced users)
+#### Prerequisites
 
-With Node.js installed, run the following one liner from the root of your Polymer Starter Kit download:
-
-```sh
-npm install -g gulp bower && npm install && bower install
-```
-
-#### Prerequisites (for everyone)
-
-The full starter kit requires the following major dependencies:
+The kit requires the following major dependencies:
 
 - Node.js, used to run JavaScript tools from the command line.
 - npm, the node package manager, installed with Node.js and used to install Node.js packages.
@@ -74,7 +53,7 @@ This lets you run `gulp` and `bower` from the command line.
 4)  Install the starter kit's local `npm` and `bower` dependencies.
 
 ```sh
-cd polymer-starter-kit && npm install && bower install
+cd website && npm install && bower install
 ```
 
 This installs the element sets (Paper, Iron, Platinum) and tools the starter kit requires to build and serve apps.
@@ -106,6 +85,14 @@ gulp
 ```
 
 Build and optimize the current project, ready for deployment. This includes linting as well as vulcanization, image, script, stylesheet and HTML optimization and minification.
+
+#### Deploy on GitHub
+
+```sh
+gulp deploy
+```
+Deploy the built project to your github project's `gh-page` branch.
+
 
 ## Application Theming & Styling
 
