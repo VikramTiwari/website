@@ -1,4 +1,4 @@
-![](https://cloud.githubusercontent.com/assets/110953/7877439/6a69d03e-0590-11e5-9fac-c614246606de.png)
+[![Build Status](https://travis-ci.org/VikramTiwari/website.svg?branch=master)](https://travis-ci.org/VikramTiwari/website)
 ## Website
 
 > A website built using Polymer on top of polymer-starter-kit.
