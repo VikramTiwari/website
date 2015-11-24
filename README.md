@@ -5,9 +5,6 @@
 
 > A website built using Polymer on top of polymer-starter-kit.
 
-<<<<<<< HEAD
-### [Documentation for polymer-starter-kit](https://github.com/PolymerElements/polymer-starter-kit)
-=======
 * [Polymer](https://www.polymer-project.org/), [Paper](https://elements.polymer-project.org/browse?package=paper-elements), [Iron](https://elements.polymer-project.org/browse?package=iron-elements) and [Neon](https://elements.polymer-project.org/browse?package=neon-elements) elements
 * [Material Design](http://www.google.com/design/spec/material-design/introduction.html) layout
 * Routing with [Page.js](https://visionmedia.github.io/page.js/)
@@ -15,7 +12,6 @@
 * Optional offline setup through [Platinum](https://elements.polymer-project.org/browse?package=platinum-elements) Service Worker elements
 * End-to-end Build Tooling (including [Vulcanize](https://github.com/Polymer/vulcanize))
 * [Recipes](/docs/README.md/) for ES2015 support, Polymer performance and using Chrome Dev Editor
->>>>>>> polymer-starter-kit
 
 ### Demo
 See latest Polymer Starter Kit Demo (from master) at http://polymerelements.github.io/polymer-starter-kit

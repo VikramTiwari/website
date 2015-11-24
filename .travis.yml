@@ -1,16 +1,4 @@
 language: node_js
-<<<<<<< HEAD
-node_js:
-  - "4.2"
-  - "4.1"
-  - "4.0"
-  - "0.12"
-  - "0.11"
-  - "0.10"
-before_script:
-  - npm install -g gulp
-script: gulp
-=======
 sudo: false
 addons:
   firefox: latest
