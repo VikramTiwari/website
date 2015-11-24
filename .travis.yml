@@ -1,0 +1,20 @@
+language: node_js
+sudo: false
+addons:
+  firefox: latest
+  apt:
+    sources:
+      - google-chrome
+    packages:
+      - google-chrome-stable
+node_js:
+  - '4.1'
+before_script:
+  - 'export DISPLAY=:99.0'
+  - sh -e /etc/init.d/xvfb start
+  - sleep 3
+  - npm i -g bower
+  - bower i
+script:
+  - npm run lint
+  - npm test

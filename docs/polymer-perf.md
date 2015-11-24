@@ -45,7 +45,11 @@ You might be wondering why `loadElements` is even needed? Why can we not just `<
 
 ```js
 function loadElements() {
+<<<<<<< HEAD
   var bundle = document.createElement(link);
+=======
+  var bundle = document.createElement('link');
+>>>>>>> 062f6bc5faa64d3fd5e69bdb78afed29f50dac80
   bundle.rel = 'import';
   bundle.href = 'elements/path_to_bundle.html';
 

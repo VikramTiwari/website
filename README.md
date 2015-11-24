@@ -5,13 +5,16 @@
 
 ### Included out of the box:
 
-* [Polymer](http://polymer-project.org), [Paper](https://elements.polymer-project.org/browse?package=paper-elements), [Iron](https://elements.polymer-project.org/browse?package=iron-elements) and [Neon](https://elements.polymer-project.org/browse?package=neon-elements) elements
+* [Polymer](https://www.polymer-project.org/), [Paper](https://elements.polymer-project.org/browse?package=paper-elements), [Iron](https://elements.polymer-project.org/browse?package=iron-elements) and [Neon](https://elements.polymer-project.org/browse?package=neon-elements) elements
 * [Material Design](http://www.google.com/design/spec/material-design/introduction.html) layout
 * Routing with [Page.js](https://visionmedia.github.io/page.js/)
 * Unit testing with [Web Component Tester](https://github.com/Polymer/web-component-tester)
 * Optional offline setup through [Platinum](https://elements.polymer-project.org/browse?package=platinum-elements) Service Worker elements
 * End-to-end Build Tooling (including [Vulcanize](https://github.com/Polymer/vulcanize))
 * [Recipes](/docs/README.md/) for ES2015 support, Polymer performance and using Chrome Dev Editor
+
+### Demo
+See latest Polymer Starter Kit Demo (from master) at http://polymerelements.github.io/polymer-starter-kit
 
 ## Getting Started
 
@@ -149,6 +152,17 @@ Web apps built with Polymer Starter Kit come configured with support for [Web Co
 
 Polymer uses [Bower](http://bower.io) for package management. This makes it easy to keep your elements up to date and versioned. For tooling, we use npm to manage Node.js-based dependencies.
 
+
+## Deploy
+
+### Github Pages
+1. Uncomment this line  `// app.baseUrl = '/polymer-starter-kit/';` in app.js near the top
+2. Change `app.baseUrl = '/polymer-starter-kit/';`  to `app.baseUrl = '/your-pathname/';` (ex: if you repo is `github.com/username/bobs-awesome-site` you would change this to `bobs-awesome-site`)
+3. Run `build-deploy-gh-pages` from command line
+4. To see changes wait 1-2 minutes then load Github pages for your app (ex: http://polymerelements.github.io/polymer-starter-kit)
+
+[See more details](/docs/deploy-to-github-pages.md/)
+
 ## Service Worker
 
 Polymer Starter Kit offers an optional offline experience thanks to Service Worker and the [Platinum Service Worker elements](https://github.com/PolymerElements/platinum-sw). New to Service Worker? Read the following [introduction](http://www.html5rocks.com/en/tutorials/service-worker/introduction/) to understand how it works.
@@ -208,7 +222,7 @@ If you experience an issue with Service Worker support in your application, chec
 
 * [sw-toolbox](https://github.com/GoogleChrome/sw-toolbox/issues)
 * [platinum-sw](https://github.com/PolymerElements/platinum-sw/issues)
-* [platinum-push-notifications-manager](https://github.com/PolymerElements/push-notification-manager/)
+* [platinum-push-notifications-manager](https://github.com/PolymerElements/platinum-push-messaging)
 * For all other issues, feel free to file them [here](https://github.com/polymerelements/polymer-starter-kit/issues).
 
 #### I get an error message about "Only secure origins are allowed"
@@ -339,6 +353,10 @@ If you are not using the build-blocks, but still wish for additional files (e.g 
 Don't worry! We've got your covered. Polymer Starter Kit tries to offer everything you need to build and optimize your apps for production, which is why we include the tooling we do. We realise however that our tooling setup may not be for everyone.
 
 If you find that you just want the simplest setup possible, we recommend using Polymer Starter Kit light, which is available from the [Releases](https://github.com/PolymerElements/polymer-starter-kit/releases) page. This takes next to no time to setup.
+
+## Licensing
+
+Like other Google projects, Polymer Starter Kit includes Google license headers at the top of several of our source files. Google's open-source licensing requires that this header be kept in place (sorry!), however we acknowledge that you may need to add your own licensing to files you modify. This can be done by appending your own extensions to these headers.
 
 ## Contributing
 
