@@ -1,0 +1,74 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="./mdi.html">
+
+<dom-module id="social-media">
+  <template>
+    <style include="shared-styles"></style>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+
+    <!-- social media lists -->
+    <iron-icon icon="mdi:facebook"></iron-icon>
+    <iron-icon icon="mdi:twitter"></iron-icon>
+    <iron-icon icon="mdi:medium"></iron-icon>
+    <iron-icon icon="mdi:google-plus"></iron-icon>
+    <iron-icon icon="mdi:instagram"></iron-icon>
+    <!-- twitter timeline -->
+    <a class="twitter-timeline" href="https://twitter.com/Vikram_Tiwari" data-widget-id="480393150108667905">Tweets by @Vikram_Tiwari</a>
+    <script>
+      ! function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+          p = /^http:/.test(d.location) ? 'http' : 'https';
+        if (!d.getElementById(id)) {
+          js = d.createElement(s);
+          js.id = id;
+          js.src = p + "://platform.twitter.com/widgets.js";
+          fjs.parentNode.insertBefore(js, fjs);
+        }
+      }(document, "script", "twitter-wjs");
+    </script>
+
+    <!-- medium profile embed -->
+    <script async src="https://static.medium.com/embed.js"></script><a class="m-profile" href="https://medium.com/@Vikram_Tiwari">Vikram Tiwari</a>
+    <!-- facebook follow button -->
+    <div id="fb-root"></div>
+    <script>
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=810677685696346";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="fb-follow" data-href="https://www.facebook.com/vikram.tiwari.falcon" data-layout="standard" data-show-faces="true"></div>
+
+
+  </template>
+
+  <script>
+    (function() {
+      'use strict';
+
+      Polymer({
+        is: 'social-media',
+
+        properties: {
+          greeting: {
+            type: String,
+            value: 'Welcome!',
+            notify: true
+          }
+        }
+      });
+    })();
+  </script>
+
+
+
+</dom-module>
