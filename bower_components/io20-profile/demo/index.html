@@ -1,0 +1,48 @@
+<!doctype html>
+<!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <title>io20-profile Demo</title>
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="import" href="../io20-profile.html">
+  </head>
+  <body unresolved>
+
+    <p>An example of <code>&lt;io20-profile&gt;</code>:</p>
+
+    <p>Make words! <button id="saybtn">Say Something</button></p>
+    <p>Make lasers! <button id="laserbtn">Fire lasers</button></p>
+
+    <io20-profile author='{"name": "Lord Meowser", "image": "http://placekitten.com/g/200/300"}' fancy>
+      <h2>Hello io20-profile</h2>
+    </io20-profile>
+
+    <script>
+      var seedElement = document.querySelector('io20-profile');
+      
+      document.querySelector('#saybtn').addEventListener('click', function() {
+        alert(seedElement.sayHello('Hallo!'));
+      });
+      
+      document.querySelector('#laserbtn').addEventListener('click', function() {
+        seedElement.fireLasers();
+      });
+      
+      document.addEventListener("io20-profile-lasers", function(e) {
+        console.log(e.detail.sound);
+      });
+      
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "name": "io20-profile",
+  "version": "1.0.3",
+  "authors": [
+    "Vikram Tiwari <vikramtheone1@gmail.com>"
+  ],
+  "description": "An element which let's you build your profile in a go",
+  "keywords": [
+    "one-pager",
+    "profile",
+    "web-component",
+    "polymer",
+    "seed"
+  ],
+  "main": "io20-profile.html",
+  "license": "http://polymer.github.io/LICENSE.txt",
+  "homepage": "https://github.com/io20/profile",
+  "ignore": [
+    "/.*",
+    "/test/"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.1.0"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "web-component-tester": "*"
+  }
+}
