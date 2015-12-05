@@ -18,7 +18,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     </style>
     <ul>
       <template is="dom-repeat" items="{{items}}">
-        <li><span class="paper-font-body1">{{item}}</span></li>
+        <li>
+          <span class="paper-font-body1">{{item}}</span>
+        </li>
       </template>
     </ul>
   </template>
@@ -37,12 +39,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         },
         ready: function() {
           this.items = [
-            'Responsive Web App boilerplate',
-            'Iron Elements and Paper Elements',
-            'End-to-end Build Tooling (including Vulcanize)',
-            'Unit testing with Web Component Tester',
-            'Routing with Page.js',
-            'Offline support with the Platinum Service Worker Elements'
+            'Allow Iluvatar dream to take up its harmony',
+            'Build Arda, light up Helcar and Ringil and populate Almaren',
+            'Shift to Valinor, widen Belegaer, raise Misty Mountains and' +
+            ' Awaken the elves ',
+            'Create Doriath, Nargothrond, Belegost, Nogrod, Ossiriand and' +
+            ' Angbad and start War of Wrath',
+            'Build Eriador, Gondor for Numenoreans decendants, Isengard,' +
+            ' Moria and Arnor',
+            'Split Arnor into Arthedain, Cardolan and Rhudar',
+            'Populate Middle Earth with all the beings'
           ];
         }
       });

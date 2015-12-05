@@ -1,17 +1,19 @@
 <link rel="import" href="../../bower_components/polymer/polymer.html">
 
-<dom-module id="my-profiles">
+<dom-module id="my-card">
   <template>
     <style>
       :host {
         display: block;
       }
     </style>
-    <ul>
+    <paper-material elevation="1" class="paper-font-body2">
       <template is="dom-repeat" items="{{items}}">
-        <li><span class="paper-font-body1">{{item}}</span></li>
+        <li>
+          <span class="paper-font-body1">{{item.account}} - {{item.url}}</span>
+        </li>
       </template>
-    </ul>
+    </paper-material>
   </template>
 
   <script>
@@ -19,7 +21,7 @@
       'use strict';
 
       Polymer({
-        is: 'my-profiles',
+        is: 'my-card',
         properties: {
           items: {
             type: Array,
@@ -27,14 +29,10 @@
           }
         },
         ready: function() {
-          this.items = [
-            'Responsive Web App boilerplate',
-            'Iron Elements and Paper Elements',
-            'End-to-end Build Tooling (including Vulcanize)',
-            'Unit testing with Web Component Tester',
-            'Routing with Page.js',
-            'Offline support with the Platinum Service Worker Elements'
-          ];
+          this.items = [{
+            'account': 'twitter',
+            'url': 'https://twitter.com/Vikram_Tiwari'
+          }];
         }
       });
     })();
