@@ -22,7 +22,10 @@
         "sizes": "384x384",
         "type": "image/png"
       }],
+<<<<<<< HEAD
   "start_url": "/website/?homescreen=1",
+=======
+>>>>>>> upstream/master
   "background_color": "#3E4EB8",
   "display": "standalone",
   "theme_color": "#2E3AA1"
