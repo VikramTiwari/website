@@ -1,6 +1,6 @@
 {
   "name": "Vikram Tiwari's Website",
-  "short_name": "Vikram",
+  "short_name": "Vikram Tiwari",
   "icons": [{
         "src": "images/touch/icon-128x128.png",
         "sizes": "128x128",
@@ -22,7 +22,7 @@
         "sizes": "384x384",
         "type": "image/png"
       }],
-  "start_url": "/?homescreen=1",
+  "start_url": "/website/?homescreen=1",
   "background_color": "#3E4EB8",
   "display": "standalone",
   "theme_color": "#2E3AA1"
