@@ -138,7 +138,8 @@ gulp.task('copy', function() {
   var app = gulp.src([
     'app/*',
     '!app/test',
-    '!app/cache-config.json'
+    '!app/cache-config.json',
+    'CNAME'
   ], {
     dot: true
   }).pipe(gulp.dest(dist()));
