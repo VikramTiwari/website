@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/VikramTiwari/website.svg?branch=master)](https://travis-ci.org/VikramTiwari/website)
 [![Dependencies Status](https://david-dm.org/VikramTiwari/website.svg)](https://david-dm.org/VikramTiwari/website)
+[![DevDependencies Status](https://david-dm.org/VikramTiwari/website.svg#info=devDependecies)](https://david-dm.org/VikramTiwari/website#info=devDependencies&view=table)
 
 ## Website
 
